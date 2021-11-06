@@ -1,0 +1,13 @@
+% D Whistle
+D4 : x ooo ooox x
+E4 : x ooo oo-x x
+F4 : x ooo o-ox x
+F#4: x ooo o-xx x
+G4 : x ooo -xxx x
+A4 : x oo- xxxx x
+Bb4: x o-o xxxx x
+B4 : x o-- xxxx x
+C#5: x -oo -xxx x
+C#5: x -o- -xxx x
+C5 : x --- ---x x
+D5 : x -oo ooox x

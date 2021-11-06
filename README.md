@@ -1,2 +1,2 @@
 # warbl-send
-Python program to custom fingering to the Warbl 
+Python program to send custom fingering to the Warbl.
