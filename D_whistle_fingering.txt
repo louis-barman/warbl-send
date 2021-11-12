@@ -1,13 +1,14 @@
 % D Whistle
-D4 : x ooo ooox x
-E4 : x ooo oo-x x
-F4 : x ooo o-ox x
-F#4: x ooo o-xx x
-G4 : x ooo -xxx x
-A4 : x oo- xxxx x
-Bb4: x o-o xxxx x
-B4 : x o-- xxxx x
-C#5: x -oo -xxx x
-C#5: x -o- -xxx x
-C5 : x --- ---x x
-D5 : x -oo ooox x
+D4 : - xxx xxx- -
+E4 : - xxx xxo- -
+F4 : - xxx xox- -
+F#4: - xxx xo-- -
+G4 : - xxx o--- -
+G#4: - xxo xxx- -
+A4 : - xxo ---- -
+Bb4: - xox ---- -
+B4 : - xoo ---- -
+C#5: - oxx o--- -
+C#5: - oxo o--- -
+C5 : - ooo ooo- -
+D5 : - oxx xxx- -

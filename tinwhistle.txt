@@ -1,0 +1,14 @@
+% tinwhistle
+D4 : - xxx xxx- -
+E4 : - xxx xxo- -
+F4 : - xxx xox- -
+F#4: - xxx xoo- -
+G4 : - xxx o--- -
+G#4: - xxo x-x- -
+A4 : - xxo ---- -
+Bb4: - xox xx-- -
+B4 : - xo- ---- -
+D5 : - oxx xxx- -
+C5 : - oxo xxx- -
+C5 : - oxx ---- -
+C#5: - o-- ---- -

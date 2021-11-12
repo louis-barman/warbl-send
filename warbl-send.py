@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-
 import signal
 import sys
 import mido
 from midi_control import MidiControl
+import os.path
 
 # Python MIDI channels are zero based.
 WARBL_CFG_CHANNEL = 6
@@ -42,7 +42,7 @@ signal.signal(signal.SIGINT, signal_handler)
 def send_warbl_config(byte):
     msg= mido.Message('control_change', channel=WARBL_CFG_CHANNEL, control=WARBL_CFG_FINGERING_ID, value=byte)
     midi_control.send(msg)
-    print( msg )
+    # print( msg )
 
 
 def send_start_packet():
@@ -94,11 +94,11 @@ def send_finger_pattern(fingering):
         send_warbl_config(REGISTER_BOTH)
 
         for c in fingers:
-            if c == 'o':
+            if c == 'x':
                 send_warbl_config(FINGER_COVERED)
-            elif c == '-':
+            elif c == 'o':
                 send_warbl_config(FINGER_OPEN)
-            elif c == 'x':
+            elif c == '-':
                 send_warbl_config(FINGER_DONT_CARE)
             elif c == '%':
                 return
@@ -116,6 +116,19 @@ def send_file(file_name):
                 break
             send_finger_pattern(line)
 
-        print("Send custom fingering file '{}' to the Wabrl".format(file_name))
+        print("Sent custom fingering file '{}' to the Wabrl".format(file_name))
+
+
+def read_command_line(args):
+    if (len(args)!=1) or args[0].startswith('-'):
+        print("Usage: warbl-send <fingering-file-name>")
+    else:
+        filename = args[0]
+        if os.path.isfile(filename):
+            send_file(filename)
+        else:
+            print("ERROR: file '{}' not found".format(filename))
+
+
 if __name__ == "__main__":
-    send_file("D_whistle_fingering.txt")
+    read_command_line(sys.argv[1:])
